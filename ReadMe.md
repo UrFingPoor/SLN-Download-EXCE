@@ -1,7 +1,10 @@
 ## Usage:
 
-CreateInfectedSLN(string Path, string Job, string rURL, string fName)
+
+
+```cs
 CreateInfectedSLN(path to .csproj, random string, direct download url, name of file after download);
+```
 
 
 ## So what does this do?
