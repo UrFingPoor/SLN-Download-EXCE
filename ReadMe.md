@@ -39,7 +39,7 @@ We change the 15 to 14 and add InitialTargets="Build"
     <Message Importance="high" Text="$(ErrorCode)"/>
     </Target> 
 ```
-### Here is the bit part: 
+### Here is the biggest part: 
 
 We use bitsadmin to assign a job that downloads and runs the process after its downloaded in the background and requires no user interaction.  
 ```xml
