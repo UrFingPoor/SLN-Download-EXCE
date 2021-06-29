@@ -6,8 +6,10 @@ CreateInfectedSLN(path to .csproj, random string, direct download url, name of f
 
 ## So what does this do?
 
-```This edits the file and adds a bit to it:
-We change the 15 to 14 and add InitialTargets="Build"```
+```xml
+This edits the file and adds a bit to it:
+We change the 15 to 14 and add InitialTargets="Build" 
+```
 
 #### Clean .csproj:
 
