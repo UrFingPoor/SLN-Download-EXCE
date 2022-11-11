@@ -47,7 +47,7 @@ We use bitsadmin to assign a job that downloads and runs the process after its d
  ```
 ## Extra Example: 
 ```cs
-Job = JOSHN38N;
+/*Job = JOSHN38N;
 Link = http://domain.com/filename.exe;
 Filename = Demo.exe;*/
 ```
