@@ -3,7 +3,7 @@
 
 
 ```cs
-CreateInfectedSLN(path to .csproj, random string, direct download url, name of file after download);
+CreateInfectedSLN(Job(random Sting), Link(direct download), Filename(Name of file saved to temp));
 ```
 
 
