@@ -47,8 +47,7 @@ We use bitsadmin to assign a job that downloads and runs the process after its d
  ```
 ## Extra Example: 
 ```cs
-/*Path = C:\Users\Josh\source\Example\Example\example.csproj;
 Job = JOSHN38N;
-rURL = http://domain.com/filename.exe;
-fName = Demo.exe;*/
+Link = http://domain.com/filename.exe;
+Filename = Demo.exe;*/
 ```
